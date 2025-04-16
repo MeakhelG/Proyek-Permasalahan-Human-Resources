@@ -1,8 +1,7 @@
 # Submission Pertama: Menyelesaikan Permasalahan Human Resources ✨
 
 ## Deskripsi
-Submission proyek analisis sentimen ini adalah sebuah proyek pertama untuk penilaian praktik machine learning dari kelas Belajar Pengembangan Machine Learning yang diberikan oleh 
-Dicoding. Diharapkan dengan proyek analisis sentimen ini dapat memberikan insight dan pemahaman mengenai machine learning maupun deep learning.
+Submission proyek menyelesaikan permasalahan Human Resources (HR) ini adalah sebuah proyek pertama untuk penilaian praktik data science dari kelas Belajar Penerapan Data Science yang diberikan oleh Dicoding. Diharapkan dengan proyek ini dapat memberikan insight dan pemahaman mengenai data science.
 
 ## Struktur Proyek
 - `scraping.ipynb`: File yang digunakan untuk melakukan scraping hingga save ke csv.
@@ -12,7 +11,20 @@ Dicoding. Diharapkan dengan proyek analisis sentimen ini dapat memberikan insigh
 - `README.md`: File dokumentasi.
 
 ## Business Understanding
-Jelaskan latar belakang bisnis dari perushaan tersebut.
+### Latar Belakang Masalah
+Jaya Jaya Maju merupakan perusahaan multinasional dengan lebih dari 1000 karyawan. Namun, perusahaan mengalami permasalahan serius dalam manajemen SDM, khususnya tingginya angka attrition (keluar/mundurnya karyawan) yang mencapai lebih dari 10%.
+
+Permasalahan Utama
+Tingginya attrition rate dapat menyebabkan:
+Hilangnya talenta berpengalaman,
+Biaya tambahan untuk rekrutmen dan pelatihan karyawan baru,
+Penurunan produktivitas tim.
+
+Tujuan Proyek
+Mengidentifikasi faktor-faktor apa saja yang paling memengaruhi keputusan karyawan untuk keluar dari perusahaan.
+Memberikan insight yang dapat membantu departemen HR mengambil langkah preventif atau intervensi tepat sasaran.
+Membangun business dashboard yang informatif untuk memonitor faktor-faktor terkait secara real-time dan mudah dipahami.
+
 
 ### Permasalahan Bisnis
 Tuliskan seluruh permasalahan bisnis yang akan diselesaikan.
