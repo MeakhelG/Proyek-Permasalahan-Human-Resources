@@ -35,14 +35,37 @@ Tuliskan seluruh permasalahan bisnis yang akan diselesaikan.
 ### Cakupan Proyek
 Tuliskan cakupan proyek yang akan dikerjakan.
 
-### Persiapan
-Sumber data: ....
+## Persiapan
+### **Sumber Data**
+Dataset yang digunakan dalam proyek ini adalah **[Dataset Karyawan Jaya Jaya Maju](https://github.com/dicodingacademy/dicoding_dataset/tree/main/employee)**, yang disediakan sesuai dengan instruksi pada submission proyek ini.
 
-Setup environment:
+### **Menyiapkan Lingkungan (Environment Setup)**
+Proyek ini memerlukan lingkungan yang sederhana untuk menjalankan **analisis data** dan **dashboard**. Berikut adalah langkah-langkah untuk mempersiapkan lingkungan kerja:
 
-```
+#### **1. Menjalankan Notebook.ipynb**
+- Pastikan **dependensi**, **paket**, dan **library** yang dibutuhkan telah tersedia. Lihat **file `requirements.txt`** untuk mengetahui daftar dependensi yang diperlukan.
+- Jalankan seluruh isi **notebook.ipynb** di **Google Colab** atau IDE sejenis untuk melihat hasil dari **analisis data**, temuan, dan **insight** yang diperoleh.
 
-```
+#### **2. Menjalankan Dashboard**
+Untuk melihat **dashboard** secara langsung, Anda dapat menggunakan **Metabase** dengan bantuan **Docker**. Pastikan **Docker** telah terpasang di sistem Anda.
+
+**Langkah-langkah untuk menjalankan Metabase menggunakan Docker**:
+1. **Tarik (pull) image Metabase dari Docker Hub** dengan perintah:
+   ```bash
+   docker pull metabase/metabase:latest
+   ```
+
+2. **Jalankan container Metabase** dengan perintah:
+   ```bash
+   docker run -p 3000:3000 --name metabase metabase/metabase
+   ```
+
+3. **Login ke Metabase** menggunakan kredensial berikut:
+   - **Username**: `root@mail.com`
+   - **Password**: `root123`
+
+Dengan mengikuti langkah-langkah ini, Anda dapat memulai **analisis data** dan **dashboard**, serta melihat hasil visualisasi langsung di **Metabase**.
+
 
 ## Business Dashboard
 Jelaskan tentang business dashboard yang telah dibuat. Jika ada, sertakan juga link untuk mengakses dashboard tersebut.
