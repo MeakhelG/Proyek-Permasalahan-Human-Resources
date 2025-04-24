@@ -5,16 +5,16 @@ Submission proyek menyelesaikan permasalahan Human Resources (HR) ini adalah seb
 
 ## 🗂 Struktur Proyek
 - `dataset/` : Folder yang menyimpan semua dataset yang digunakan dalam proyek.
-  - `data_bersih` : Berisi file CSV dari hasil proses cleaning.
-  - `dataset_predict` : Berisi file CSV yang ingin di prediksi oleh model.
-  - `fitur_penting` : Berisi file CSV berupa fitur-fitur penting yang memengaruhi Attrition.
-  - `hasil_prediksi_model` : Berisi file CSV dari hasil proses prediksi model.
-  - `hasil_prediksi_hr` : Berisi file CSV dari hasil proses prediksi model dari `prediction.py`.
+  - `data_bersih.csv` : Berisi file CSV dari hasil proses cleaning.
+  - `dataset_predict.csv` : Berisi file CSV yang ingin di prediksi oleh model.
+  - `fitur_penting.csv` : Berisi file CSV berupa fitur-fitur penting yang memengaruhi Attrition.
+  - `hasil_prediksi_hr.csv` : Berisi file CSV dari hasil proses prediksi model dari `prediction.py`.
+  - `hasil_prediksi_model.csv` : Berisi file CSV dari hasil proses prediksi model.
 - `joblib_model.pkl`: File model Random Forest Classifier yang disimpan oleh joblib dari hasil modeling di `notebook.ipynb`.
-- `meakhelg-dashboard`: File dashboard yang telah saya buat untuk submission kali ini.
 - `meakhelg-dashboard-1.jpg` : Halaman pertama dashboard.
 - `meakhelg-dashboard-2.jpg` : Halaman kedua dashboard.
-- `meakhelg-video`: Video penjelasan business dashboard yang telah dibuat dan kesimpulan dari dashboard tersebut.
+- `meakhelg-dashboard.pdf`: File dashboard yang telah saya buat untuk submission kali ini dalam bentuk PDF.
+- `meakhelg-video.mkv`: Video penjelasan business dashboard yang telah dibuat dan kesimpulan dari dashboard tersebut.
 - `metabase.db.mv.db`: File database dari Metabase.
 - `notebook.ipynb`: File yang digunakan untuk melakukan Data Understanding, EDA, hingga Modeling, Evaluasi, dan Konklusi.
 - `pickle_model.pkl`: File model Random Forest Classifier yang disimpan oleh pickle dari hasil modeling di notebook.ipynb.
