@@ -64,7 +64,7 @@ Proyek ini memerlukan lingkungan yang sederhana untuk menjalankan **analisis dat
 - Pastikan **dependensi**, **paket**, dan **library** yang dibutuhkan telah tersedia. Lihat **file `requirements.txt`** untuk mengetahui daftar dependensi yang diperlukan.
 - Jalankan seluruh isi **notebook.ipynb** di **Google Colab** atau IDE sejenis untuk melihat hasil dari **analisis data**, temuan, dan **insight** yang diperoleh.
 
-#### **2. Menjalankan prediction.ipynb**
+#### **2. Menjalankan prediction.py**
 - Pastikan **dependensi**, **paket**, dan **library** yang dibutuhkan telah tersedia. Lihat **file `requirements.txt`** untuk mengetahui daftar dependensi yang diperlukan.
 - prediction.py dapat dijalankan secara individu atau menggunakan **Google Colab** atau IDE sejenis dalam **notebook.ipynb** untuk menjalankan prediksi. Namun, saya menyarankan untuk menjalankannya menggunakan **Google Colab** atau IDE sejenis dalam **notebook.ipynb**.
 - Pengguna hanya perlu mengganti pada
