@@ -4,12 +4,14 @@
 Submission proyek menyelesaikan permasalahan Human Resources (HR) ini adalah sebuah proyek pertama untuk penilaian praktik data science dari kelas Belajar Penerapan Data Science yang diberikan oleh Dicoding. Diharapkan dengan proyek ini dapat memberikan insight dan pemahaman mengenai data science.
 
 ## 🗂 Struktur Proyek
-- `joblib_model.pkl.`: File model Random Forest Classifier yang disimpan oleh joblib dari hasil modeling di notebook.ipynb.
+- `dataset/` : Folder yang menyimpan semua dataset yang digunakan dalam proyek.
+  - `data_bersih` : Berisi file CSV dari hasil proses cleaning.
+- `joblib_model.pkl`: File model Random Forest Classifier yang disimpan oleh joblib dari hasil modeling di notebook.ipynb.
 - `meakhelg-dashboard`: File dashboard yang telah saya buat untuk submission kali ini.
-- `meakhelg-dashboard`: Video penjelasan business dashboard yang telah dibuat dan kesimpulan dari dashboard tersebut.
+- `meakhelg-video`: Video penjelasan business dashboard yang telah dibuat dan kesimpulan dari dashboard tersebut.
 - `metabase.db.mv.db`: File database dari Metabase.
 - `notebook.ipynb`: File yang digunakan untuk melakukan Data Understanding, EDA, hingga Modeling, Evaluasi, dan Konklusi.
-- `pickle_model.pkl.`: File model Random Forest Classifier yang disimpan oleh pickle dari hasil modeling di notebook.ipynb.
+- `pickle_model.pkl`: File model Random Forest Classifier yang disimpan oleh pickle dari hasil modeling di notebook.ipynb.
 - `prediction.py`: File yang digunakan untuk menjalankan prediksi machine learning.
 - `ulasan_gcal.csv`: File dataset hasil scraping dari aplikasi Google Calendar dari Play Store.
 - `README.md`: File dokumentasi.
