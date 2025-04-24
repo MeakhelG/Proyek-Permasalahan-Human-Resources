@@ -1,3 +1,4 @@
+import pickle
 import pandas as pd
 import joblib
 from sklearn.compose import ColumnTransformer
@@ -74,13 +75,15 @@ def predict(model, X_encoded, y, dataset):
 # -------------------- Main Program --------------------
 if __name__ == "__main__":
     # Load data prediksi
-    predict_df = pd.read_csv('data_predict.csv')  # Ganti path jika perlu
+    predict_df = pd.read_csv('./dataset/dataset_predict.csv')  # Ganti path jika perlu
 
     # Proses encoding
     X_encoded, _, y = encoding(predict_df)
 
     # Load model
-    model = joblib.load('model.pkl')
+    # model = joblib.load('joblib_model.pkl')
+    with open('pickle_model.pkl', 'rb') as file:
+        model = pickle.load(file)
 
     # Lakukan prediksi
     result_df, accuracy = predict(model, X_encoded, y, predict_df)
