@@ -6,6 +6,12 @@ Submission proyek menyelesaikan permasalahan Human Resources (HR) ini adalah seb
 ## 🗂 Struktur Proyek
 - `dataset/` : Folder yang menyimpan semua dataset yang digunakan dalam proyek.
   - `data_bersih` : Berisi file CSV dari hasil proses cleaning.
+  - `dataset_predict` : Berisi file CSV yang ingin di prediksi oleh model.
+  - `fitur_penting` : Berisi file CSV berupa fitur-fitur penting yang memengaruhi Attrition.
+  - `hasil_prediksi_model` : Berisi file CSV dari hasil proses prediksi model.
+- `foto-dashboard/` : Folder yang menyimpan hasil konversi dashboard bentuk PDF ke JPG.
+  - `meakhelg-dashboard-1.jpg` : Halaman pertama dashboard.
+  - `meakhelg-dashboard-1.jpg` : Halaman kedua dashboard.
 - `joblib_model.pkl`: File model Random Forest Classifier yang disimpan oleh joblib dari hasil modeling di notebook.ipynb.
 - `meakhelg-dashboard`: File dashboard yang telah saya buat untuk submission kali ini.
 - `meakhelg-video`: Video penjelasan business dashboard yang telah dibuat dan kesimpulan dari dashboard tersebut.
