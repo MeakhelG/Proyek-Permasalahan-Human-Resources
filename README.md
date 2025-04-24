@@ -4,13 +4,22 @@
 Submission proyek menyelesaikan permasalahan Human Resources (HR) ini adalah sebuah proyek pertama untuk penilaian praktik data science dari kelas Belajar Penerapan Data Science yang diberikan oleh Dicoding. Diharapkan dengan proyek ini dapat memberikan insight dan pemahaman mengenai data science.
 
 ## 🗂 Struktur Proyek
+- `dataset/` : Folder yang menyimpan semua dataset yang digunakan dalam proyek.
+  - `data_bersih` : Berisi file CSV dari hasil proses cleaning.
+  - `dataset_predict` : Berisi file CSV yang ingin di prediksi oleh model.
+  - `fitur_penting` : Berisi file CSV berupa fitur-fitur penting yang memengaruhi Attrition.
+  - `hasil_prediksi_model` : Berisi file CSV dari hasil proses prediksi model.
+  - `hasil_prediksi_hr` : Berisi file CSV dari hasil proses prediksi model dari `prediction.py`.
+- `foto-dashboard/` : Folder yang menyimpan hasil konversi dashboard bentuk PDF ke JPG.
+  - `meakhelg-dashboard-1.jpg` : Halaman pertama dashboard.
+  - `meakhelg-dashboard-1.jpg` : Halaman kedua dashboard.
+- `joblib_model.pkl`: File model Random Forest Classifier yang disimpan oleh joblib dari hasil modeling di `notebook.ipynb`.
 - `meakhelg-dashboard`: File dashboard yang telah saya buat untuk submission kali ini.
-- `meakhelg-dashboard`: Video penjelasan business dashboard yang telah dibuat dan kesimpulan dari dashboard tersebut.
+- `meakhelg-video`: Video penjelasan business dashboard yang telah dibuat dan kesimpulan dari dashboard tersebut.
 - `metabase.db.mv.db`: File database dari Metabase.
-- `model.pkl.`: File model Random Forest Classifier hasil modeling di notebook.ipynb.
 - `notebook.ipynb`: File yang digunakan untuk melakukan Data Understanding, EDA, hingga Modeling, Evaluasi, dan Konklusi.
+- `pickle_model.pkl`: File model Random Forest Classifier yang disimpan oleh pickle dari hasil modeling di notebook.ipynb.
 - `prediction.py`: File yang digunakan untuk menjalankan prediksi machine learning.
-- `ulasan_gcal.csv`: File dataset hasil scraping dari aplikasi Google Calendar dari Play Store.
 - `README.md`: File dokumentasi.
 
 ## 📌 Business Understanding
@@ -44,25 +53,28 @@ Analisis dilakukan terhadap beberapa aspek penting, antara lain:
 - **Pemodelan dan Evaluasi**: menggunakan berbagai algoritma (Logistic Regression, Random Forest, SVM, XGBoost, KNN) untuk menentukan model terbaik berdasarkan metrik seperti Accuracy, Precision, Recall, dan F1-Score.
 - **Prediksi**: melakukan prediksi dengan model terbaik untuk mendeteksi karyawan yang berpotensi keluar.
 
-
-### Permasalahan Bisnis
-Tuliskan seluruh permasalahan bisnis yang akan diselesaikan.
-
-### Cakupan Proyek
-Tuliskan cakupan proyek yang akan dikerjakan.
-
-## Persiapan
-### **Sumber Data**
+## 🔧 Persiapan
+### 💾 **Sumber Data**
 Dataset yang digunakan dalam proyek ini adalah **[Dataset Karyawan Jaya Jaya Maju](https://github.com/dicodingacademy/dicoding_dataset/tree/main/employee)**, yang disediakan sesuai dengan instruksi pada submission proyek ini.
 
-### **Menyiapkan Lingkungan (Environment Setup)**
+### 💻 **Menyiapkan Lingkungan (Environment Setup)**
 Proyek ini memerlukan lingkungan yang sederhana untuk menjalankan **analisis data** dan **dashboard**. Berikut adalah langkah-langkah untuk mempersiapkan lingkungan kerja:
 
-#### **1. Menjalankan Notebook.ipynb**
+#### **1. Menjalankan notebook.ipynb**
 - Pastikan **dependensi**, **paket**, dan **library** yang dibutuhkan telah tersedia. Lihat **file `requirements.txt`** untuk mengetahui daftar dependensi yang diperlukan.
 - Jalankan seluruh isi **notebook.ipynb** di **Google Colab** atau IDE sejenis untuk melihat hasil dari **analisis data**, temuan, dan **insight** yang diperoleh.
 
-#### **2. Menjalankan Dashboard**
+#### **2. Menjalankan prediction.ipynb**
+- Pastikan **dependensi**, **paket**, dan **library** yang dibutuhkan telah tersedia. Lihat **file `requirements.txt`** untuk mengetahui daftar dependensi yang diperlukan.
+- prediction.py dapat dijalankan secara individu atau menggunakan **Google Colab** atau IDE sejenis dalam **notebook.ipynb** untuk menjalankan prediksi. Namun, saya menyarankan untuk menjalankannya menggunakan **Google Colab** atau IDE sejenis dalam **notebook.ipynb**.
+- Pengguna hanya perlu mengganti pada
+   ```bash
+    predict_df = pd.read_csv('./dataset/dataset_predict.csv')  # Ganti path jika perlu
+   ```
+   untuk diganti ke path dengan dataset yang ingin di prediksi fitur Attrition-nya.
+- Pengguna akan langusng mendapatkan hasil prediksi dalam bentuk .csv dengan nama 'hasil_prediksi_hr.csv' beserta dengan akurasi model untuk mendeteksi dataset.
+
+#### **3. Menjalankan Dashboard**
 Untuk melihat **dashboard** secara langsung, Anda dapat menggunakan **Metabase** dengan bantuan **Docker**. Pastikan **Docker** telah terpasang di sistem Anda.
 
 **Langkah-langkah untuk menjalankan Metabase menggunakan Docker**:
@@ -82,9 +94,28 @@ Untuk melihat **dashboard** secara langsung, Anda dapat menggunakan **Metabase**
 
 Dengan mengikuti langkah-langkah ini, Anda dapat memulai **analisis data** dan **dashboard**, serta melihat hasil visualisasi langsung di **Metabase**.
 
+## 📊 Business Dashboard
+### Ringkasan Dashboard  
+Dashboard ini menganalisis data 1.058 karyawan untuk mengidentifikasi faktor penyebab tingginya attrition. Sebanyak 179 karyawan telah keluar, dan 40 lainnya diprediksi berisiko tinggi keluar oleh model.
 
-## Business Dashboard
-Jelaskan tentang business dashboard yang telah dibuat. Jika ada, sertakan juga link untuk mengakses dashboard tersebut.
+### Faktor Utama Attrition  
+Fitur paling berpengaruh adalah lembur (20.72%), yang diikuti pendapatan bulanan dan usia. Ini menandakan tekanan kerja dan kompensasi menjadi alasan dominan karyawan keluar.
+
+### Distribusi dan Pola Karyawan Keluar  
+- **Umur 25–35 tahun** paling banyak keluar.  
+- **Laki-laki (58.6%)** mendominasi populasi.  
+- **Status lajang (single)** memiliki attrition tertinggi.
+- Adanya **lembur** membuat karyawan memiliki risiko untuk keluar.
+- Karyawan dengan **gaji dibawah $5.000** juga lebih berisiko keluar.
+
+### Job Role dan Risiko  
+Bidang pekerjaan *Sales Representative* dan *Laboratory Technician* mencatat attrition tertinggi, sedangkan *Manager* dan *Research Director* relatif stabil.
+
+### Tren Risiko  
+Semakin tinggi usia, penghasilan, dan lama bekerja, maka semakin kecil kemungkinan karyawan keluar. Ini menunjukkan pentingnya retensi terhadap karyawan senior dan berpengalaman.
+
+### Prediksi Model  
+Model memprediksi 180 karyawan akan keluar, dengan probabilitas risiko individu ditampilkan dalam tabel (berada pada paling bawah dashboard). Karyawan dengan skor risiko tinggi perlu menjadi prioritas untuk intervensi HR.
 
 ## 🔍 Conclusion
 ### 🎯 Temuan Utama
