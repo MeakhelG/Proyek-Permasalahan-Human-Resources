@@ -10,11 +10,10 @@ Submission proyek menyelesaikan permasalahan Human Resources (HR) ini adalah seb
   - `fitur_penting` : Berisi file CSV berupa fitur-fitur penting yang memengaruhi Attrition.
   - `hasil_prediksi_model` : Berisi file CSV dari hasil proses prediksi model.
   - `hasil_prediksi_hr` : Berisi file CSV dari hasil proses prediksi model dari `prediction.py`.
-- `foto-dashboard/` : Folder yang menyimpan hasil konversi dashboard bentuk PDF ke JPG.
-  - `meakhelg-dashboard-1.jpg` : Halaman pertama dashboard.
-  - `meakhelg-dashboard-1.jpg` : Halaman kedua dashboard.
 - `joblib_model.pkl`: File model Random Forest Classifier yang disimpan oleh joblib dari hasil modeling di `notebook.ipynb`.
 - `meakhelg-dashboard`: File dashboard yang telah saya buat untuk submission kali ini.
+- `meakhelg-dashboard-1.jpg` : Halaman pertama dashboard.
+- `meakhelg-dashboard-2.jpg` : Halaman kedua dashboard.
 - `meakhelg-video`: Video penjelasan business dashboard yang telah dibuat dan kesimpulan dari dashboard tersebut.
 - `metabase.db.mv.db`: File database dari Metabase.
 - `notebook.ipynb`: File yang digunakan untuk melakukan Data Understanding, EDA, hingga Modeling, Evaluasi, dan Konklusi.
