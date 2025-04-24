@@ -19,7 +19,6 @@ Submission proyek menyelesaikan permasalahan Human Resources (HR) ini adalah seb
 - `notebook.ipynb`: File yang digunakan untuk melakukan Data Understanding, EDA, hingga Modeling, Evaluasi, dan Konklusi.
 - `pickle_model.pkl`: File model Random Forest Classifier yang disimpan oleh pickle dari hasil modeling di notebook.ipynb.
 - `prediction.py`: File yang digunakan untuk menjalankan prediksi machine learning.
-- `ulasan_gcal.csv`: File dataset hasil scraping dari aplikasi Google Calendar dari Play Store.
 - `README.md`: File dokumentasi.
 
 ## 📌 Business Understanding
